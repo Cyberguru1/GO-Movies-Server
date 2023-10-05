@@ -15,7 +15,8 @@ $(function () {
                     <ul>
                         <li> ID: ${items.id} </li>
                         <li> ISBN: ${items.isbn} </li>
-                    </ul>`);
+                    </ul>
+                    <p></p`);
             });
         })
     }
