@@ -33,6 +33,11 @@ To run this server, you need to have [Go](https://golang.org/doc/install) instal
    ```
 
    The server will start on port 8000 by default.
+4. Access the server on Browser:
+
+```http
+http:localhost:8000
+```
 
 ## Usage
 
