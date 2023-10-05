@@ -49,7 +49,8 @@ http:localhost:8000
 ### List all movies
 
 - **GET** `/movies`
-- **Mock Up FrontEnd**![1696507010258.png](./1696507010258.png)
+- **Mock Up FrontEnd**
+- ![1696507010258.png](https://imgur.com/WZNKuqS.png)
 
 ### Get a specific movie by ID
 
@@ -58,7 +59,8 @@ http:localhost:8000
 ### Create a new movie record
 
 - **POST** `/movies`
-- **Mock Up FrontEnd**![1696507079035.png](./1696507079035.png)
+- **Mock Up FrontEnd**
+- ![1696507079035.png](https://imgur.com/jZx5AuP.png)
 
 ### Update an existing movie record
 
