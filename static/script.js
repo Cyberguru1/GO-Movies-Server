@@ -7,11 +7,16 @@ $(function () {
     });
     function listMovies() {
         var url = 'http://localhost:8000/movies';
+        $("#list-container").empty();
         $.get(url, function(data, status){
-            for (const items of data) {
-                $(".movie-container").append(`<h2>${items.Title}</h2>`);
-                console.log("Here")
-            }
+            data.forEach(function(items){
+                $("#list-container").append(
+                    `<li>Title:  ${items.title} </li>
+                    <ul>
+                        <li> ID: ${items.id} </li>
+                        <li> ISBN: ${items.isbn} </li>
+                    </ul>`);
+            });
         })
     }
 })

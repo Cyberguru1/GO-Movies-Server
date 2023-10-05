@@ -91,7 +91,8 @@ func main() {
 	movies = append(movies, Movie{ID: "1", Isbn: "343434", Title: "Movie One", Director: &Director{Firstname: "John", Lastname: "Doewy"}})
 	movies = append(movies, Movie{ID: "2", Isbn: "343435", Title: "Movie two", Director: &Director{Firstname: "Jason", Lastname: "toewy"}})
 
-	fileserver := http.FileServer(http.Dir("static/"))
+	fileserver := http.FileServer(http.Dir("./static/"))
+	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", fileserver))
 	r.Handle("/", fileserver)
 	r.HandleFunc("/movies", getMovies).Methods("GET")
 	r.HandleFunc("/movies/{id}", getMovie).Methods("GET")
