@@ -9,11 +9,29 @@
     </head>
 
     <body>
-        <h2> List  current movies !!! </h2>
+        <h1> Add More Movies </h1>
+        <form id="movie-form">
+            <label for="isbn">ISBN Number:</label>
+            <input type="text" id="isbn" name="isbn" required><br>
+    
+            <label for="title">Title of the Movie:</label>
+            <input type="text" id="title" name="title" required><br>
+    
+            <label for="director-first-name">Director's First Name:</label>
+            <input type="text" id="director-first-name" name="director-first-name" required><br>
+    
+            <label for="director-last-name">Director's Last Name:</label>
+            <input type="text" id="director-last-name" name="director-last-name" required><br>
+    
+            <input id="submit-btn" type="submit" value="Submit">
+        </form>
+
+        <p></p>
+
+        <h1> List  current movies </h1>
         <input id="btn" type="Button" value="List movies"/><br/>
         <div class="movie-container">
             <ul id="list-container">
-                <li>Apple</li>
             </ul>
         </div>        
     </body>

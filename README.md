@@ -44,6 +44,7 @@ To run this server, you need to have [Go](https://golang.org/doc/install) instal
 ### List all movies
 
 - **GET** `/movies`
+- **Mock Up FrontEnd**![1696507010258.png](./1696507010258.png)
 
 ### Get a specific movie by ID
 
@@ -52,6 +53,7 @@ To run this server, you need to have [Go](https://golang.org/doc/install) instal
 ### Create a new movie record
 
 - **POST** `/movies`
+- **Mock Up FrontEnd**![1696507079035.png](./1696507079035.png)
 
 ### Update an existing movie record
 
